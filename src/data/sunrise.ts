@@ -227,8 +227,8 @@ export const sunriseConfig = {
     { eyebrow: "Пляж", title: "Собственный пляж", description: "Собственный пляж указан в официальных материалах и фотогалерее отеля; детали доступности уточняются по сезону и датам.", icon: "05", sourceUrl: official.photos, status: "confirmed", confirmed: true },
   ] as IncludedItem[],
   gallery: [
-    { src: "/assets/sunrise/hero/evening.jpg", alt: "Официальная фотография вечерней программы «Санрайза»" },
-    { src: "/assets/sunrise/shows/show-02.jpg", alt: "Официальная фотография шоу-программы «Санрайза»" },
+    { src: "/assets/sunrise/hero/evening.jpg?v=20260813", alt: "Официальная фотография вечерней программы «Санрайза»" },
+    { src: "/assets/sunrise/shows/show-02.jpg?v=20260813", alt: "Официальная фотография шоу-программы «Санрайза»" },
     { src: "/assets/sunrise/pool/pool.jpg", alt: "Официальная фотография бассейна на территории «Санрайза»" },
     { src: "/assets/sunrise/territory/territory.jpg", alt: "Официальная фотография территории отеля «Санрайз»" },
     { src: "/assets/sunrise/food/food.jpg", alt: "Официальная фотография зоны питания «Санрайза»" },
