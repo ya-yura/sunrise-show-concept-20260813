@@ -26,9 +26,12 @@ Production-проверка:
 ```bash
 npm run build
 npm run lint
+npm run export:static
 ```
 
 The project is prepared for GitHub Pages as a static demo. The request form is intentionally local until a real endpoint or booking integration is configured.
+
+GitHub Pages is published by [.github/workflows/pages.yml](./.github/workflows/pages.yml). The public demo URL is `https://ya-yura.github.io/sunrise-show-concept-20260813/` after the first workflow run completes.
 
 ## Где менять данные
 
