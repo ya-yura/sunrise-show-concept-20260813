@@ -233,6 +233,9 @@ textarea { resize: vertical; min-height: 75px; line-height: 1.45; }
 .faq-item button i { color: var(--coral); font: 25px var(--serif); font-style: normal; text-align: right; }
 .faq-answer { padding: 0 45px 24px 54px; }
 .faq-answer p { max-width: 560px; margin: 0; color: #737d83; font-size: 13px; line-height: 1.7; }
+.faq-price-table { max-width: 560px; margin-top: 18px; border-top: 1px solid #d6cbbb; }
+.faq-price-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: baseline; border-bottom: 1px solid #d6cbbb; padding: 11px 0; color: #737d83; font-size: 12px; line-height: 1.35; }
+.faq-price-row strong { color: var(--ink); font: 18px var(--serif); white-space: nowrap; }
 
 .final-request-section { padding: 120px 0 100px; }
 .final-request-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; align-items: start; }
@@ -349,6 +352,8 @@ textarea { resize: vertical; min-height: 75px; line-height: 1.45; }
   .faq-item button { grid-template-columns: 30px 1fr 24px; gap: 8px; padding: 18px 0; }
   .faq-item button strong { font-size: 18px; }
   .faq-answer { padding: 0 28px 20px 38px; }
+  .faq-price-row { gap: 12px; }
+  .faq-price-row strong { font-size: 16px; }
   .final-request-copy { margin-bottom: 45px; }
   .final-form { padding: 23px 18px; }
   .form-context-row { grid-template-columns: 95px 1fr; }
