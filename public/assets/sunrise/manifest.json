@@ -1,0 +1,130 @@
+[
+  {
+    "local": "/assets/sunrise/brand/logo.png",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/site/themes/sunrise2018/images/title.png",
+    "sourcePage": "https://sunrise-hotel.ru/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Официальный декоративный знак бренда; сохранён для reference, текстовый wordmark используется в интерфейсе",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/hero/evening.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/93/05/593/593.96.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Hero и контекст музыкального вечера",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/shows/show-01.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/93/05/593/593.96.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фотография шоу-программы",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/shows/show-02.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/94/05/594/594.96.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фотография шоу-программы",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/shows/show-03.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/95/05/595/595.96.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фотография шоу-программы",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/shows/show-04.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/97/05/597/597.96.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фотография шоу-программы",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/shows/show-05.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/98/05/598/598.96.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фотография шоу-программы",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/rooms/room-double.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/90/03/390/390.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/allrooms/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото 2местного семейного номера с балконом",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/rooms/room-triple.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/97/04/497/497.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/allrooms/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото 3местного семейного номера с балконом",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/rooms/room-four.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/17/05/517/517.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/allrooms/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото 4местного семейного номера с балконом",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/rooms/room-family.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/15/05/515/515.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/allrooms/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото 2-комнатного семейного номера с балконом",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/rooms/room-no-balcony.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/72/03/372/372.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/allrooms/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото 3местного семейного номера без балкона",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/pool/pool.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/39/05/539/539.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/pool/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото бассейна и аквазоны",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/territory/territory.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/04/01/104/104.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото территории и фирменной вывески",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/food/food.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/15/04/415/415.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/food/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото зоны питания",
+    "status": "demo-reference"
+  },
+  {
+    "local": "/assets/sunrise/beach/beach.jpg",
+    "sourceUrl": "https://j5xf1v43ny.a.trbcdn.net/wa-data/public/photos/91/05/591/591.1200x0.jpg",
+    "sourcePage": "https://sunrise-hotel.ru/photos/",
+    "checkedAt": "2026-08-13",
+    "purpose": "Фото собственного пляжа",
+    "status": "demo-reference"
+  }
+]

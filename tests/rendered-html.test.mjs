@@ -29,8 +29,11 @@ test("server-renders the Sunrise show journey", async () => {
 
   const html = await response.text();
   assert.match(html, /Музыкальные вечера и шоу в/);
-  assert.match(html, /Ближайшие даты шоу уточняются/);
-  assert.match(html, /Проверим, какая программа будет/);
-  assert.match(html, /заявка на проверку доступности/i);
+  assert.match(html, /Расписание ближайших шоу уточняется/);
+  assert.match(html, /Проверим программу и проживание/);
+  assert.match(html, /Подготовить запрос/);
+  assert.match(html, /assets\/sunrise\/hero\/evening\.jpg/);
+  assert.match(html, /Шаг 1 из 5/);
+  assert.doesNotMatch(html, /sunrise-hotel\.ru\/wa-data/);
   assert.doesNotMatch(html, /2025|codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
