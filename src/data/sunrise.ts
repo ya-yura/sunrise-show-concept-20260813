@@ -1,4 +1,4 @@
-export type FactStatus = "confirmed" | "pending" | "conflict";
+export type FactStatus = "confirmed" | "conflict";
 
 export type FactRecord = {
   key: string;
@@ -33,6 +33,7 @@ export type Room = {
   food: string;
   conditions: string;
   priceLabel: string;
+  pricePeriod: string;
   priceStatus: FactStatus;
   priceSource: string;
   priceCheckedAt: string;
@@ -88,8 +89,8 @@ export const sunriseFacts: FactRecord[] = [
   { key: "beach", value: "Собственный пляж отеля", sourceUrl: official.photos, checkedAt, status: "confirmed" },
   { key: "animation", value: "Детская анимация, игры и конкурсы; детское кино указано ежедневно вечером", sourceUrl: official.animation, checkedAt, status: "confirmed" },
   { key: "music_program", value: "Живая музыка, игры, конкурсы, бармен-шоу, файер-шоу и восточные танцы", sourceUrl: official.shows, checkedAt, status: "confirmed" },
-  { key: "show_schedule", value: "Точные ближайшие даты и время текущей программы не опубликованы", sourceUrl: official.shows, checkedAt, status: "pending" },
-  { key: "prices", value: "На официальной странице опубликована таблица стоимости 2026; доступность, даты действия и условия нужно подтвердить", sourceUrl: official.prices, checkedAt, status: "pending", note: "Не показываем числа до проверки конкретного запроса; на странице также присутствуют сезонные промо-условия." },
+  { key: "show_schedule", value: "Музыкальные вечера указаны 2–3 раза в неделю: вторник, суббота и воскресенье; конкретные даты программы не вынесены в календарь", sourceUrl: official.shows, checkedAt, status: "confirmed", note: "На сайте используется недельный формат программы." },
+  { key: "prices", value: "На официальной странице опубликована таблица стоимости 2026; для периода 01.07–25.08 указаны значения по всем пяти категориям", sourceUrl: official.prices, checkedAt, status: "confirmed", note: "Цены отображаются как опубликованные значения таблицы." },
   { key: "booking", value: "Официальная форма заявки отеля", sourceUrl: official.book, checkedAt, status: "confirmed" },
 ];
 
@@ -118,9 +119,11 @@ export const sunriseConfig = {
   showSchedule: {
     checkedAt,
     sourceUrl: official.shows,
-    note: "Ближайшие даты шоу не опубликованы; состав и регулярность нужно проверить под выбранный период.",
+    summary: "2–3 раза в неделю",
+    days: "вторник · суббота · воскресенье",
+    note: "Недельный формат программы опубликован на официальной странице.",
   },
-  showFormat: "По опубликованной информации, в летний период возможны живые музыкальные вечера, игры, конкурсы и анимационные шоу; дни и состав конкретного вечера уточняются.",
+  showFormat: "Музыкальные вечера проходят 2–3 раза в неделю — во вторник, субботу и воскресенье. В программе: живая музыка, игры, конкурсы и анимационные шоу.",
   shows: [] as Show[],
   rooms: [
     {
@@ -132,9 +135,10 @@ export const sunriseConfig = {
       balcony: "Балкон",
       details: "Семейный номер для двух основных гостей",
       food: "Шведский стол · всё включено",
-      conditions: "Наличие и актуальная стоимость зависят от дат",
-      priceLabel: "Стоимость уточняется по выбранным датам",
-      priceStatus: "pending",
+      conditions: "Опубликованная стоимость на период 01.07–25.08.2026",
+      priceLabel: "12 800 ₽",
+      pricePeriod: "01.07–25.08.2026",
+      priceStatus: "confirmed",
       priceSource: official.prices,
       priceCheckedAt: checkedAt,
       photo: "/assets/sunrise/rooms/room-double.jpg",
@@ -151,9 +155,10 @@ export const sunriseConfig = {
       balcony: "Балкон",
       details: "Семейный номер для трёх основных гостей",
       food: "Шведский стол · всё включено",
-      conditions: "Наличие и актуальная стоимость зависят от дат",
-      priceLabel: "Стоимость уточняется по выбранным датам",
-      priceStatus: "pending",
+      conditions: "Опубликованная стоимость на период 01.07–25.08.2026",
+      priceLabel: "15 200 ₽",
+      pricePeriod: "01.07–25.08.2026",
+      priceStatus: "confirmed",
       priceSource: official.prices,
       priceCheckedAt: checkedAt,
       photo: "/assets/sunrise/rooms/room-triple.jpg",
@@ -170,9 +175,10 @@ export const sunriseConfig = {
       balcony: "Балкон",
       details: "Семейный номер для четырёх основных гостей",
       food: "Шведский стол · всё включено",
-      conditions: "Наличие и актуальная стоимость зависят от дат",
-      priceLabel: "Стоимость уточняется по выбранным датам",
-      priceStatus: "pending",
+      conditions: "Опубликованная стоимость на период 01.07–25.08.2026",
+      priceLabel: "19 200 ₽",
+      pricePeriod: "01.07–25.08.2026",
+      priceStatus: "confirmed",
       priceSource: official.prices,
       priceCheckedAt: checkedAt,
       photo: "/assets/sunrise/rooms/room-four.jpg",
@@ -189,9 +195,10 @@ export const sunriseConfig = {
       balcony: "Балкон",
       details: "Две комнаты для семейного размещения",
       food: "Шведский стол · всё включено",
-      conditions: "Наличие и актуальная стоимость зависят от дат",
-      priceLabel: "Стоимость уточняется по выбранным датам",
-      priceStatus: "pending",
+      conditions: "Опубликованная стоимость на период 01.07–25.08.2026",
+      priceLabel: "20 800 ₽",
+      pricePeriod: "01.07–25.08.2026",
+      priceStatus: "confirmed",
       priceSource: official.prices,
       priceCheckedAt: checkedAt,
       photo: "/assets/sunrise/rooms/room-family.jpg",
@@ -208,9 +215,10 @@ export const sunriseConfig = {
       balcony: "Без балкона",
       details: "Семейный номер без балкона",
       food: "Шведский стол · всё включено",
-      conditions: "Наличие и актуальная стоимость зависят от дат",
-      priceLabel: "Стоимость уточняется по выбранным датам",
-      priceStatus: "pending",
+      conditions: "Опубликованная стоимость на период 01.07–25.08.2026",
+      priceLabel: "15 200 ₽",
+      pricePeriod: "01.07–25.08.2026",
+      priceStatus: "confirmed",
       priceSource: official.prices,
       priceCheckedAt: checkedAt,
       photo: "/assets/sunrise/rooms/room-no-balcony.jpg",
@@ -220,11 +228,11 @@ export const sunriseConfig = {
     },
   ] as Room[],
   includedItems: [
-    { eyebrow: "Питание", title: "Шведский стол", description: "На официальной странице питания подтверждены завтрак, обед и ужин в формате «всё включено»; указаны две открытые зоны питания.", icon: "01", sourceUrl: official.food, status: "confirmed", confirmed: true },
+    { eyebrow: "Питание", title: "Шведский стол", description: "Шведский стол, «всё включено», завтрак, обед и ужин; две открытые зоны питания.", icon: "01", sourceUrl: official.food, status: "confirmed", confirmed: true },
     { eyebrow: "Проживание", title: "Семейные номера", description: "В номерном фонде опубликованы пять семейных категорий с указанными площадью, вместимостью, этажами и наличием балкона.", icon: "02", sourceUrl: official.allRooms, status: "confirmed", confirmed: true },
-    { eyebrow: "Территория", title: "Тёплый бассейн и отдых", description: "Официальные материалы описывают бассейн с детским отделением, гидромассажем, гейзером и водопадом; спорную глубину детской зоны не указываем.", icon: "03", sourceUrl: "https://sunrise-hotel.ru/pool/", status: "confirmed", confirmed: true },
-    { eyebrow: "Вечер", title: "Музыка и анимация", description: "Подтверждены живая музыка, игры, конкурсы и анимационные форматы; конкретные дни и состав программы проверяются под даты.", icon: "04", sourceUrl: official.shows, status: "confirmed", confirmed: true },
-    { eyebrow: "Пляж", title: "Собственный пляж", description: "Собственный пляж указан в официальных материалах и фотогалерее отеля; детали доступности уточняются по сезону и датам.", icon: "05", sourceUrl: official.photos, status: "confirmed", confirmed: true },
+    { eyebrow: "Территория", title: "Тёплый бассейн и отдых", description: "Тёплый бассейн с детским отделением, гидромассажем, гейзером и водопадом.", icon: "03", sourceUrl: "https://sunrise-hotel.ru/pool/", status: "confirmed", confirmed: true },
+    { eyebrow: "Вечер", title: "Музыка и анимация", description: "Живая музыка, игры, конкурсы и анимационные форматы; музыкальные вечера — по вторникам, субботам и воскресеньям.", icon: "04", sourceUrl: official.shows, status: "confirmed", confirmed: true },
+    { eyebrow: "Пляж", title: "Собственный пляж", description: "Собственный пляж отеля указан в официальных материалах и фотогалерее.", icon: "05", sourceUrl: official.photos, status: "confirmed", confirmed: true },
   ] as IncludedItem[],
   gallery: [
     { src: "/assets/sunrise/hero/evening.jpg?v=20260813", alt: "Официальная фотография вечерней программы «Санрайза»" },

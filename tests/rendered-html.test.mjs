@@ -29,11 +29,13 @@ test("server-renders the Sunrise show journey", async () => {
 
   const html = await response.text();
   assert.match(html, /Музыкальные вечера и шоу в/);
-  assert.match(html, /Расписание ближайших шоу уточняется/);
-  assert.match(html, /Проверим программу и проживание/);
+  assert.match(html, /Музыкальные вечера — 2–3 раза в неделю/);
+  assert.match(html, /Готовая заявка на отдых/);
   assert.match(html, /Подготовить запрос/);
+  assert.match(html, /12 800 ₽/);
   assert.match(html, /assets\/sunrise\/hero\/evening\.jpg/);
-  assert.match(html, /Шаг 1 из 5/);
+  assert.match(html, /Шаг 2 из 5/);
+  assert.doesNotMatch(html, /уточняется|ожидание|подтверждённое бронирование|Стоимость уточняется/i);
   assert.doesNotMatch(html, /sunrise-hotel\.ru\/wa-data/);
   assert.doesNotMatch(html, /2025|codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });

@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   title: "Музыкальные вечера и шоу в «Санрайзе»",
   description: "Музыкальные вечера и шоу в отеле «Санрайз» в Витязево. Подберите даты проживания и подготовьте один понятный запрос.",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   openGraph: {
     title: "Музыкальные вечера и шоу в «Санрайзе»",
