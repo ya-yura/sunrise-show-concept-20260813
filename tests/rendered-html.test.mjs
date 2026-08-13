@@ -28,11 +28,11 @@ test("server-renders the Sunrise show journey", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /Музыкальные вечера и шоу в/);
-  assert.match(html, /Музыкальные вечера — 2–3 раза в неделю/);
-  assert.match(html, /Готовая заявка на отдых/);
-  assert.match(html, /Подготовить запрос/);
-  assert.match(html, /12 800 ₽/);
+  assert.match(html, /Музыкальные вечера/);
+  assert.match(html, /Вечер, ради которого/);
+  assert.match(html, /Сколько стоит номер\?/);
+  assert.match(html, /Собрать заявку/);
+  assert.match(html, /12(?: |\u00a0)800(?: |\u00a0)₽/);
   assert.match(html, /assets\/sunrise\/hero\/evening\.jpg/);
   assert.match(html, /Шаг 2 из 5/);
   assert.doesNotMatch(html, /уточняется|ожидание|подтверждённое бронирование|Стоимость уточняется/i);

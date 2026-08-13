@@ -17,8 +17,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+html { scroll-behavior: smooth; text-rendering: optimizeLegibility; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-feature-settings: "kern" 1, "liga" 1; line-height: 1.5; }
 button, input, select, textarea { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
@@ -58,7 +58,7 @@ img { display: block; max-width: 100%; }
 .hero-kicker { display: flex; align-items: center; gap: 10px; }
 .hero-kicker span { display: block; width: 28px; height: 1px; background: var(--gold); }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2, h3 { font-weight: 400; }
+h1, h2, h3 { font-weight: 400; text-wrap: balance; }
 h1 { max-width: 730px; margin-bottom: 24px; font: clamp(54px, 7vw, 92px)/.94 var(--serif); letter-spacing: -.045em; }
 h1 em, h2 em, .hero-program-card em, .request-summary em, .final-request-copy em { color: var(--gold-light); font-style: italic; }
 .hero-lede { max-width: 400px; margin-bottom: 34px; color: rgba(242,238,231,.76); font-size: 16px; line-height: 1.55; }
@@ -198,7 +198,7 @@ textarea { resize: vertical; min-height: 75px; line-height: 1.45; }
 .room-card h3 { margin-bottom: 9px; font: 25px/1.05 var(--serif); letter-spacing: -.03em; }
 .room-card > p { min-height: 38px; margin: 0; color: #737d83; font-size: 11px; line-height: 1.45; }
 .room-divider { height: 1px; margin: 18px 0; background: #d4cabd; }
-.room-price { color: var(--coral); font: 16px var(--serif); }
+.room-price { color: var(--coral); font: 16px var(--serif); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .room-card > small { margin-top: 6px; color: #8b9294; font-size: 10px; }
 .room-card .text-button { align-self: flex-start; margin-top: auto; color: var(--ink); }
 
@@ -235,7 +235,8 @@ textarea { resize: vertical; min-height: 75px; line-height: 1.45; }
 .faq-answer p { max-width: 560px; margin: 0; color: #737d83; font-size: 13px; line-height: 1.7; }
 .faq-price-table { max-width: 560px; margin-top: 18px; border-top: 1px solid #d6cbbb; }
 .faq-price-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: baseline; border-bottom: 1px solid #d6cbbb; padding: 11px 0; color: #737d83; font-size: 12px; line-height: 1.35; }
-.faq-price-row strong { color: var(--ink); font: 18px var(--serif); white-space: nowrap; }
+.faq-price-row strong { color: var(--ink); font: 18px var(--serif); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.section-copy, .hero-lede, .faq-answer p, .room-card > p, .included-card > p, .final-request-copy > p { hyphens: auto; }
 
 .final-request-section { padding: 120px 0 100px; }
 .final-request-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; align-items: start; }
